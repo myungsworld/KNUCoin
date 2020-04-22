@@ -1,0 +1,2 @@
+# KNUCoin
+KNU Coin
