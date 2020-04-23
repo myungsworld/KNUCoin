@@ -30,7 +30,7 @@ Content-Type : application/json
 Parameter  
   - "title" : "~"  
 
-- 특정 index 데이터 수정
+- 특정 index 데이터 수정  
 PUT /test/1  
 Host : localhost:3000  
 Content-Type : application/json  
