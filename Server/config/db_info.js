@@ -7,7 +7,7 @@ var dbconnInfo = {
 		port: '3306',
 		user: 'root',
 		password: 'knu2019!!',
-		database: 'best_matching', 
+		database: 'knucoin', 
 		multipleStatements : true
 	}//,
 	// real:{

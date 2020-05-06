@@ -18,8 +18,10 @@ var indexRouter = require('./routes/index');
 var signRouter = require('./routes/signup/signup');
 app.use('/signup', signRouter);
 
+
 //request 요청 URL과 처리 로직을 선언한 라우팅 모듈 매핑
-app.use('/', indexRouter);
+ var loginRouter = require('./routes/login');
+ app.use('/login', loginRouter);
 
 app.listen(PORT, () => {
     console.log('Express server listening on port '+PORT);
