@@ -3,26 +3,6 @@ var router = express.Router();
 
 var dbConObj = require('../../config/db_info');	//디비 정보 import
 var dbconn = dbConObj.init(); //sql 실행결과( results(배열 + json 형태)에 저장)
-
-// let users = [
-//     {
-//       id: 1,
-//       name: 'alice'
-//     },
-//     {
-//       id: 2,
-//       name: 'bek'
-//     },
-//     {
-//       id: 3,
-//       name: 'chris'
-//     }
-// ]
-  
-// router.get('/users', (req, res) => {
-//     console.log('who get in here/users');
-//     res.json(users);
-//  });
  
 
 router.post('/signup', function (req, res) {
@@ -34,22 +14,22 @@ router.post('/signup', function (req, res) {
         var input_data_array= [];
         var inputData = JSON.parse(data); // JSON data 받음
 
-        inputData = JSON.parse(data,(key, value)=>{ //JSON values -> array
-            input_data_array.push(value);
-        });
-        input_data_array.pop();
+        input_data_array.push(inputData.user_id);//JSON values -> array
+        input_data_array.push(inputData.user_pwd);
+        input_data_array.push(inputData.user_category);
+        input_data_array.push(inputData.user_name);
+        input_data_array.push(inputData.user_phone);
+        
         console.log('input_data : ' + input_data_array);
 
         var sql_insert = 'INSERT INTO knucoin.user (user_id, user_pwd, user_category, user_name , user_phone) VALUES(?, ?, ?, ?, ?)';
         dbconn.query(sql_insert,input_data_array, function (err, rows, fields) {//DB connect
             if (!err) {
                 console.log('Query insert success');
-                res.send("Success");
-                res.end();
+                res.json({"result" : "Success"});
             } else {
                 console.log('Query Error : ' + err);
-                res.send(err);
-                res.end();
+                res.json({"result" : err});
             }
         });
     });
@@ -72,14 +52,14 @@ router.post('/check', function (req, res, next) {
                 for(var i =0;i<rows.length;i++){
                     if(rows[i].user_id==find_id){
                         console.log('duplication');
-                        res.send('duplication');
+                        res.json({"result" : "duplication"});
                         check=true;
                         break;
                     }
                 }
                 if(!check){
                     console.log('no duplication');
-                    res.send('no duplication');
+                    res.json({"result" : "no duplication"});
                 }
             }else{
                 res.send(err);
