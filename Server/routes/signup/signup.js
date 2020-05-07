@@ -14,10 +14,12 @@ router.post('/signup', function (req, res) {
         var input_data_array= [];
         var inputData = JSON.parse(data); // JSON data 받음
 
-        inputData = JSON.parse(data,(key, value)=>{ //JSON values -> array
-            input_data_array.push(value);
-        });
-        input_data_array.pop();
+        input_data_array.push(inputData.user_id);//JSON values -> array
+        input_data_array.push(inputData.user_pwd);
+        input_data_array.push(inputData.user_category);
+        input_data_array.push(inputData.user_name);
+        input_data_array.push(inputData.user_phone);
+        
         console.log('input_data : ' + input_data_array);
 
         var sql_insert = 'INSERT INTO knucoin.user (user_id, user_pwd, user_category, user_name , user_phone) VALUES(?, ?, ?, ?, ?)';
