@@ -20,14 +20,14 @@ router.post('/', function (req, res) {
                 for(var i =0;i<rows.length;i++){
                     if(rows[i].user_id==login_id&& rows[i].user_pwd ==login_pwd){
                         console.log(login_id+ ' login!!');
-                        res.send('login');
+                        res.json({"result" : "Success"});
                         check=true;
                         break;
                     }
                 }
                 if(!check){
-                    console.log('login failed');
-                    res.send('no find');
+                    console.log('login Failed');
+                    res.json({"result" : "No find"});
                 }
             }else{
                 res.send(err);
