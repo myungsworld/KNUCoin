@@ -1,5 +1,5 @@
 const express = require('express');
-const http = require('http');
+//const http = require('http');
 const PORT = process.env.PORT || 3000;
 const app = express();
 
@@ -12,16 +12,10 @@ app.set('port', process.env.PORT || PORT);
 // });
 
 //라우팅 모듈 선언
-var indexRouter = require('./routes/index');
-
-//회원가입 라우팅 선언
-var signRouter = require('./routes/signup/signup');
-app.use('/signup', signRouter);
+app.use('/',  require('./routes/index'));
 
 
 
- var loginRouter = require('./routes/login');
- app.use('/login', loginRouter);
 
 app.listen(PORT, () => {
     console.log('Express server listening on port '+PORT);
