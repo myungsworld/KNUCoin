@@ -16,7 +16,6 @@ router.post('/signup', function (req, res) {
         moment.tz.setDefault("Asia/Seoul");
         var date = moment().format('YYYY-MM-DD HH:mm:ss'); 
 
-
         input_data_array.push(inputData.user_id);//JSON values -> array
         input_data_array.push(inputData.category);
         input_data_array.push(inputData.name);
@@ -30,9 +29,6 @@ router.post('/signup', function (req, res) {
                 input_data_array.push(buf.toString('base64')); //salt
                 console.log("key = " +key.toString('base64')); // 'dWhPkH6c4X1Y71A/DrAHhML3DyKQdEkUOIaSmYCI7xZkD5bLZhPF0dOSs2YZA/Y4B8XNfWd3DHIqR5234RtHzw=='
                 console.log("buf = " +buf.toString('base64'));
-
-                
-                
                 console.log('input_data : ' + input_data_array); // 회원가입 내용 출력
                 
                 var sql_insert = 'INSERT INTO knucoin.user (user_id ,category, name,  phone, signup_time, pwd, salt) VALUES(?, ?, ?, ?, ?, ?, ?)';
@@ -61,21 +57,21 @@ router.post('/check', function (req, res, next) {
         inputData = JSON.parse(data);
         var find_id = inputData.user_id;
 
-        var sql = 'SELECT * FROM user'; 
-        dbconn.query(sql,function (err, rows, fields) {
+        var sql = 'SELECT * FROM user WHERE user_id = ?'; 
+        dbconn.query(sql,[find_id],function (err, rows, fields) {
             if(!err){
-                var check = false;
-                for(var i =0;i<rows.length;i++){
-                    if(rows[i].user_id==find_id){
-                        console.log('duplication');
-                        res.json({"result" : "duplication"});
-                        check=true;
-                        break;
-                    }
-                }
-                if(!check){
+                if(rows.length==0){
                     console.log('no duplication');
                     res.json({"result" : "no duplication"});
+                }
+                else if (rows.length == 1 && rows[0].user_id == find_id) {
+                    console.log('duplication');
+                    res.json({ "result": "duplication" });
+                    check = true;
+                }
+                else {
+                    console.log('*******DB 사용자 중복********');
+                    res.json({"result" : "Error"});
                 }
             }else{
                 res.send(err);

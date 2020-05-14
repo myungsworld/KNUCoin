@@ -21,7 +21,7 @@ router.post('/', function (req, res) {
                     res.json({"result" : "No find"});
                 }
                 else if(rows.length==1){
-                    crypto.randomBytes(64, (err, buf) => {
+                    crypto.randomBytes(64, (err, buf) => {  //암호화 후 회원가입 정보 입력
                         if(err)
                             console.log('crypto error : '+ err);
                         else {
@@ -42,6 +42,14 @@ router.post('/', function (req, res) {
                         }
                     });
                 }
+                else{
+                    console.log('*******DB 사용자 중복********');
+                    res.json({"result" : "Error"});
+                }
+            }
+            else{
+                console.log('Login Query error : '+ err);
+                res.json({"result" : err});
             }
         });
     });
