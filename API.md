@@ -1,7 +1,7 @@
 ## 회원가입
 * Request   
   * URL   
-    POST /signup/signup   
+    POST /user/signup   
     Host : localhost:3000   
     Content-Type : application/json  
     Accept : application/json   
@@ -28,7 +28,7 @@
 ## 아이디 중복체크
 * Request   
   * URL   
-    POST /signup/check   
+    POST /user/check   
     Host : localhost:3000   
     Content-Type : application/json  
     Accept : application/json  
@@ -51,7 +51,7 @@
  ## 로그인
 * Request   
   * URL   
-    POST /login   
+    POST /user/login   
     Host : localhost:3000   
     Content-Type : application/json  
     Accept : application/json  
