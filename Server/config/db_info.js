@@ -5,8 +5,8 @@ const dbconnInfo = {
 	dev:{
 		host: 'localhost',
 		port: '3306',
-		user: 'root',
-		password: 'knu2019!!',
+		user: 'knucoin',
+		password: 'knucoin',
 		database: 'knucoin', 
 		multipleStatements : true
 	}//,
@@ -23,7 +23,7 @@ const dbconnInfo = {
 const dbconnection = {
 	init : function(){
 		var hostname = os.hostname();
-		if(hostname === 'SANGHUN'){
+		if(hostname === 'Sanghyunui-MacBookPro.local'){
 			return mysql.createConnection(dbconnInfo.dev);	//로컬개발환경
         }
         // else{
