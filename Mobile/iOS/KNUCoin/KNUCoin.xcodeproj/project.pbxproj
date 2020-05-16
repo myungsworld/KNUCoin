@@ -17,8 +17,9 @@
 		8873EDF2245BFC0F00DAB896 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8873EDF1245BFC0F00DAB896 /* LoginViewController.swift */; };
 		8873EDF4245BFC2E00DAB896 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8873EDF3245BFC2E00DAB896 /* SignupViewController.swift */; };
 		DC5B46D024697F6800F33A9B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B46CF24697F6800F33A9B /* Extensions.swift */; };
-		DC95AF4E24627A5400D1AE17 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC95AF4D24627A5400D1AE17 /* HomeViewController.swift */; };
-		DC95AF5024628EB600D1AE17 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC95AF4F24628EB600D1AE17 /* WebViewController.swift */; };
+		DCC9C297246FBDB8008C0BDD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC9C296246FBDB8008C0BDD /* HomeViewController.swift */; };
+		DCC9C299246FBE3B008C0BDD /* QRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC9C298246FBE3B008C0BDD /* QRScannerViewController.swift */; };
+		DCC9C29B246FBE7B008C0BDD /* Home_ChargeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC9C29A246FBE7B008C0BDD /* Home_ChargeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +35,9 @@
 		8873EDF1245BFC0F00DAB896 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8873EDF3245BFC2E00DAB896 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		DC5B46CF24697F6800F33A9B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		DC95AF4D24627A5400D1AE17 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		DC95AF4F24628EB600D1AE17 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		DCC9C296246FBDB8008C0BDD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DCC9C298246FBE3B008C0BDD /* QRScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerViewController.swift; sourceTree = "<group>"; };
+		DCC9C29A246FBE7B008C0BDD /* Home_ChargeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_ChargeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +80,10 @@
 				8818C61A245ADA120012D0AB /* DesignableView.swift */,
 				8873EDF1245BFC0F00DAB896 /* LoginViewController.swift */,
 				8873EDF3245BFC2E00DAB896 /* SignupViewController.swift */,
-				DC95AF4D24627A5400D1AE17 /* HomeViewController.swift */,
-				DC95AF4F24628EB600D1AE17 /* WebViewController.swift */,
 				DC5B46CF24697F6800F33A9B /* Extensions.swift */,
+				DCC9C296246FBDB8008C0BDD /* HomeViewController.swift */,
+				DCC9C298246FBE3B008C0BDD /* QRScannerViewController.swift */,
+				DCC9C29A246FBE7B008C0BDD /* Home_ChargeViewController.swift */,
 			);
 			path = KNUCoin;
 			sourceTree = "<group>";
@@ -157,14 +160,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				8873EDF2245BFC0F00DAB896 /* LoginViewController.swift in Sources */,
+				DCC9C299246FBE3B008C0BDD /* QRScannerViewController.swift in Sources */,
 				DC5B46D024697F6800F33A9B /* Extensions.swift in Sources */,
 				8873EDF4245BFC2E00DAB896 /* SignupViewController.swift in Sources */,
+				DCC9C29B246FBE7B008C0BDD /* Home_ChargeViewController.swift in Sources */,
 				8818C61B245ADA120012D0AB /* DesignableView.swift in Sources */,
+				DCC9C297246FBDB8008C0BDD /* HomeViewController.swift in Sources */,
 				8851EDF924597552000FA0B4 /* ViewController.swift in Sources */,
 				8851EDF524597552000FA0B4 /* AppDelegate.swift in Sources */,
-				DC95AF4E24627A5400D1AE17 /* HomeViewController.swift in Sources */,
 				8851EDF724597552000FA0B4 /* SceneDelegate.swift in Sources */,
-				DC95AF5024628EB600D1AE17 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
