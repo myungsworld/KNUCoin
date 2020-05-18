@@ -10,13 +10,13 @@
 		8818C61B245ADA120012D0AB /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8818C61A245ADA120012D0AB /* DesignableView.swift */; };
 		8851EDF524597552000FA0B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8851EDF424597552000FA0B4 /* AppDelegate.swift */; };
 		8851EDF724597552000FA0B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8851EDF624597552000FA0B4 /* SceneDelegate.swift */; };
-		8851EDF924597552000FA0B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8851EDF824597552000FA0B4 /* ViewController.swift */; };
 		8851EDFC24597552000FA0B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8851EDFA24597552000FA0B4 /* Main.storyboard */; };
 		8851EDFE24597554000FA0B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8851EDFD24597554000FA0B4 /* Assets.xcassets */; };
 		8851EE0124597554000FA0B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8851EDFF24597554000FA0B4 /* LaunchScreen.storyboard */; };
 		8873EDF2245BFC0F00DAB896 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8873EDF1245BFC0F00DAB896 /* LoginViewController.swift */; };
 		8873EDF4245BFC2E00DAB896 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8873EDF3245BFC2E00DAB896 /* SignupViewController.swift */; };
 		DC5B46D024697F6800F33A9B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B46CF24697F6800F33A9B /* Extensions.swift */; };
+		DC63A60B247236D600F67224 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC63A60A247236D600F67224 /* QRCodeViewController.swift */; };
 		DCC9C297246FBDB8008C0BDD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC9C296246FBDB8008C0BDD /* HomeViewController.swift */; };
 		DCC9C299246FBE3B008C0BDD /* QRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC9C298246FBE3B008C0BDD /* QRScannerViewController.swift */; };
 		DCC9C29B246FBE7B008C0BDD /* Home_ChargeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC9C29A246FBE7B008C0BDD /* Home_ChargeViewController.swift */; };
@@ -27,7 +27,6 @@
 		8851EDF124597552000FA0B4 /* KNUCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KNUCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8851EDF424597552000FA0B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8851EDF624597552000FA0B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8851EDF824597552000FA0B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8851EDFB24597552000FA0B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8851EDFD24597554000FA0B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8851EE0024597554000FA0B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +34,7 @@
 		8873EDF1245BFC0F00DAB896 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8873EDF3245BFC2E00DAB896 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		DC5B46CF24697F6800F33A9B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		DC63A60A247236D600F67224 /* QRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
 		DCC9C296246FBDB8008C0BDD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DCC9C298246FBE3B008C0BDD /* QRScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerViewController.swift; sourceTree = "<group>"; };
 		DCC9C29A246FBE7B008C0BDD /* Home_ChargeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_ChargeViewController.swift; sourceTree = "<group>"; };
@@ -70,22 +70,38 @@
 		8851EDF324597552000FA0B4 /* KNUCoin */ = {
 			isa = PBXGroup;
 			children = (
+				DCC9C2B624704B3F008C0BDD /* FirstViewes */,
+				DCC9C2B5247049C1008C0BDD /* HomeTab */,
 				8851EDF424597552000FA0B4 /* AppDelegate.swift */,
 				8851EDF624597552000FA0B4 /* SceneDelegate.swift */,
-				8851EDF824597552000FA0B4 /* ViewController.swift */,
 				8851EDFA24597552000FA0B4 /* Main.storyboard */,
 				8851EDFD24597554000FA0B4 /* Assets.xcassets */,
 				8851EDFF24597554000FA0B4 /* LaunchScreen.storyboard */,
 				8851EE0224597554000FA0B4 /* Info.plist */,
 				8818C61A245ADA120012D0AB /* DesignableView.swift */,
-				8873EDF1245BFC0F00DAB896 /* LoginViewController.swift */,
-				8873EDF3245BFC2E00DAB896 /* SignupViewController.swift */,
 				DC5B46CF24697F6800F33A9B /* Extensions.swift */,
+			);
+			path = KNUCoin;
+			sourceTree = "<group>";
+		};
+		DCC9C2B5247049C1008C0BDD /* HomeTab */ = {
+			isa = PBXGroup;
+			children = (
 				DCC9C296246FBDB8008C0BDD /* HomeViewController.swift */,
 				DCC9C298246FBE3B008C0BDD /* QRScannerViewController.swift */,
 				DCC9C29A246FBE7B008C0BDD /* Home_ChargeViewController.swift */,
+				DC63A60A247236D600F67224 /* QRCodeViewController.swift */,
 			);
-			path = KNUCoin;
+			path = HomeTab;
+			sourceTree = "<group>";
+		};
+		DCC9C2B624704B3F008C0BDD /* FirstViewes */ = {
+			isa = PBXGroup;
+			children = (
+				8873EDF1245BFC0F00DAB896 /* LoginViewController.swift */,
+				8873EDF3245BFC2E00DAB896 /* SignupViewController.swift */,
+			);
+			path = FirstViewes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,10 +179,10 @@
 				DCC9C299246FBE3B008C0BDD /* QRScannerViewController.swift in Sources */,
 				DC5B46D024697F6800F33A9B /* Extensions.swift in Sources */,
 				8873EDF4245BFC2E00DAB896 /* SignupViewController.swift in Sources */,
+				DC63A60B247236D600F67224 /* QRCodeViewController.swift in Sources */,
 				DCC9C29B246FBE7B008C0BDD /* Home_ChargeViewController.swift in Sources */,
 				8818C61B245ADA120012D0AB /* DesignableView.swift in Sources */,
 				DCC9C297246FBDB8008C0BDD /* HomeViewController.swift in Sources */,
-				8851EDF924597552000FA0B4 /* ViewController.swift in Sources */,
 				8851EDF524597552000FA0B4 /* AppDelegate.swift in Sources */,
 				8851EDF724597552000FA0B4 /* SceneDelegate.swift in Sources */,
 			);

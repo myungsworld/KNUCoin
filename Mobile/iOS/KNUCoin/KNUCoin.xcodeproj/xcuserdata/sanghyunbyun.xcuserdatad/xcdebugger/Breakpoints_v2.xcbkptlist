@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "73057D0F-9225-45E2-8DF7-1A646D7A1825"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "21E8C23F-EE92-45F7-B599-4A1DB4E5F7E2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KNUCoin/Test/TestViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "TestViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "21E8C23F-EE92-45F7-B599-4A1DB4E5F7E2 - 3a2add3e343b7320"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KNUCoin.TestViewController.sideMenuConstraint.getter : Swift.Optional&lt;__C.NSLayoutConstraint&gt;"
+                  moduleName = "KNUCoin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sanghyunbyun/Desktop/KNUCoin/Mobile/iOS/KNUCoin/KNUCoin/Test/TestViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  uuid = "21E8C23F-EE92-45F7-B599-4A1DB4E5F7E2 - 8ee232aff5b14b34"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KNUCoin.TestViewController.sideMenuConstraint.setter : Swift.Optional&lt;__C.NSLayoutConstraint&gt;"
+                  moduleName = "KNUCoin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sanghyunbyun/Desktop/KNUCoin/Mobile/iOS/KNUCoin/KNUCoin/Test/TestViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "200">
+               </Location>
+               <Location
+                  uuid = "21E8C23F-EE92-45F7-B599-4A1DB4E5F7E2 - 424166fe3ccce923"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KNUCoin.TestViewController.sideMenuConstraint.modify : Swift.Optional&lt;__C.NSLayoutConstraint&gt;"
+                  moduleName = "KNUCoin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sanghyunbyun/Desktop/KNUCoin/Mobile/iOS/KNUCoin/KNUCoin/Test/TestViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "21E8C23F-EE92-45F7-B599-4A1DB4E5F7E2 - 9878b01aa556c2ee"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KNUCoin.TestViewController.sideMenuConstraint.modify : Swift.Optional&lt;__C.NSLayoutConstraint&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "KNUCoin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sanghyunbyun/Desktop/KNUCoin/Mobile/iOS/KNUCoin/KNUCoin/Test/TestViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "21E8C23F-EE92-45F7-B599-4A1DB4E5F7E2 - e1a7e83f52eecead"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KNUCoin.TestViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; KNUCoin.TestViewController"
+                  moduleName = "KNUCoin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sanghyunbyun/Desktop/KNUCoin/Mobile/iOS/KNUCoin/KNUCoin/Test/TestViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "188">
+               </Location>
+               <Location
+                  uuid = "21E8C23F-EE92-45F7-B599-4A1DB4E5F7E2 - 9832c54f9f448358"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KNUCoin.TestViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;KNUCoin.TestViewController&gt;"
+                  moduleName = "KNUCoin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sanghyunbyun/Desktop/KNUCoin/Mobile/iOS/KNUCoin/KNUCoin/Test/TestViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "132">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "379C2C62-FE89-4DD1-BBD5-315FA7D31142"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KNUCoin/HomeTab/QRCodeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "handlerSwipes(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "008E1CE1-A8EC-4BBD-9FC9-F9C3C62A1A84"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KNUCoin/HomeTab/QRCodeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "handlerSwipes(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

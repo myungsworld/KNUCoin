@@ -558,22 +558,35 @@
                                     <segue destination="pBO-ZZ-Cfv" kind="embed" identifier="ToSecondChild" id="FnQ-8L-EHf"/>
                                 </connections>
                             </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TcL-23-Vkt">
+                                <rect key="frame" x="0.0" y="398" width="414" height="289"/>
+                                <connections>
+                                    <segue destination="d4d-im-Fxe" kind="embed" id="xEf-hH-iiN"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="TcL-23-Vkt" firstAttribute="top" secondItem="gc5-Av-fT8" secondAttribute="bottom" constant="338" id="04j-Aw-wl2"/>
                             <constraint firstItem="2WD-xn-wnH" firstAttribute="leading" secondItem="bU9-zE-Lu5" secondAttribute="leading" id="KMZ-kQ-8do"/>
                             <constraint firstItem="gc5-Av-fT8" firstAttribute="trailing" secondItem="bU9-zE-Lu5" secondAttribute="trailing" id="Wct-Ei-PF5"/>
+                            <constraint firstItem="TcL-23-Vkt" firstAttribute="trailing" secondItem="bU9-zE-Lu5" secondAttribute="trailing" id="YBY-Pe-u0e"/>
                             <constraint firstItem="gc5-Av-fT8" firstAttribute="top" secondItem="bU9-zE-Lu5" secondAttribute="top" id="bTO-m5-r3s"/>
                             <constraint firstItem="bU9-zE-Lu5" firstAttribute="trailing" secondItem="2WD-xn-wnH" secondAttribute="trailing" id="bwe-1Y-vpy"/>
+                            <constraint firstItem="TcL-23-Vkt" firstAttribute="bottom" secondItem="bU9-zE-Lu5" secondAttribute="bottom" id="cg7-Bc-h8S"/>
+                            <constraint firstItem="TcL-23-Vkt" firstAttribute="leading" secondItem="bU9-zE-Lu5" secondAttribute="leading" id="uBb-ij-k7U"/>
                             <constraint firstItem="2WD-xn-wnH" firstAttribute="top" secondItem="bU9-zE-Lu5" secondAttribute="top" id="wEn-Ms-Fea"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bU9-zE-Lu5"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="LHe-6E-L32"/>
+                    <connections>
+                        <outlet property="qrCodeTopConstraint" destination="04j-Aw-wl2" id="OlZ-iF-wGm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z5l-Dc-RdB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1294" y="-263"/>
+            <point key="canvasLocation" x="1173.913043478261" y="-179.34782608695653"/>
         </scene>
         <!--Scanner View Controller-->
         <scene sceneID="WeY-tm-mHZ">
@@ -598,6 +611,7 @@
                             <constraint firstItem="JEH-8n-qoM" firstAttribute="top" secondItem="XNJ-hR-SkN" secondAttribute="top" id="Wey-rG-Dgr"/>
                             <constraint firstItem="JEH-8n-qoM" firstAttribute="leading" secondItem="XNJ-hR-SkN" secondAttribute="leading" id="Ys5-rY-NBQ"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="s95-ph-0fp"/>
                     </view>
                     <connections>
                         <outlet property="videoView" destination="JEH-8n-qoM" id="M9V-wn-0uZ"/>
@@ -605,7 +619,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M60-kv-3hH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2219" y="-263"/>
+            <point key="canvasLocation" x="2196" y="-267"/>
         </scene>
         <!--Home Charge View Controller-->
         <scene sceneID="I9p-Ns-iSs">
@@ -641,6 +655,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="dGl-xn-no7" secondAttribute="trailing" id="f0d-h2-CyD"/>
                             <constraint firstAttribute="bottomMargin" secondItem="dGl-xn-no7" secondAttribute="bottom" id="t0l-ZA-0aX"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="dJy-Ny-G6q"/>
                     </view>
                     <connections>
                         <outlet property="lbl" destination="a6l-2f-4VE" id="pnk-i4-fHU"/>
@@ -648,7 +663,43 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H7b-HU-wMv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2070" y="-602"/>
+            <point key="canvasLocation" x="2070" y="-516"/>
+        </scene>
+        <!--Code View Controller-->
+        <scene sceneID="LeG-Ie-9Cf">
+            <objects>
+                <viewController id="d4d-im-Fxe" customClass="QRCodeViewController" customModule="KNUCoin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Bl-wq-P66">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="289"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="결제" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Maz-ET-kPm">
+                                <rect key="frame" x="20" y="20" width="53" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="VqG-3N-OY9"/>
+                                    <constraint firstAttribute="width" constant="53" id="lkQ-Rg-WvF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Maz-ET-kPm" firstAttribute="leading" secondItem="ChR-lf-9U2" secondAttribute="leading" constant="20" id="bsJ-hS-Fbv"/>
+                            <constraint firstItem="Maz-ET-kPm" firstAttribute="top" secondItem="ChR-lf-9U2" secondAttribute="top" constant="20" id="y7k-wS-JMj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ChR-lf-9U2"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yh8-Tv-4mN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2195.6521739130435" y="72.96195652173914"/>
         </scene>
     </scenes>
     <resources>
