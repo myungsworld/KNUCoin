@@ -564,16 +564,28 @@
                                     <segue destination="d4d-im-Fxe" kind="embed" id="xEf-hH-iiN"/>
                                 </connections>
                             </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RYR-y5-70Z">
+                                <rect key="frame" x="0.0" y="687" width="414" height="619"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="619" id="xZ9-2f-QVY"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="QEi-4Y-xYX" kind="embed" id="fdd-vm-gun"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="TcL-23-Vkt" firstAttribute="top" secondItem="gc5-Av-fT8" secondAttribute="bottom" constant="338" id="04j-Aw-wl2"/>
+                            <constraint firstItem="RYR-y5-70Z" firstAttribute="top" secondItem="gc5-Av-fT8" secondAttribute="bottom" constant="627" id="EKy-lv-YDB"/>
                             <constraint firstItem="2WD-xn-wnH" firstAttribute="leading" secondItem="bU9-zE-Lu5" secondAttribute="leading" id="KMZ-kQ-8do"/>
                             <constraint firstItem="gc5-Av-fT8" firstAttribute="trailing" secondItem="bU9-zE-Lu5" secondAttribute="trailing" id="Wct-Ei-PF5"/>
                             <constraint firstItem="TcL-23-Vkt" firstAttribute="trailing" secondItem="bU9-zE-Lu5" secondAttribute="trailing" id="YBY-Pe-u0e"/>
                             <constraint firstItem="gc5-Av-fT8" firstAttribute="top" secondItem="bU9-zE-Lu5" secondAttribute="top" id="bTO-m5-r3s"/>
                             <constraint firstItem="bU9-zE-Lu5" firstAttribute="trailing" secondItem="2WD-xn-wnH" secondAttribute="trailing" id="bwe-1Y-vpy"/>
                             <constraint firstItem="TcL-23-Vkt" firstAttribute="bottom" secondItem="bU9-zE-Lu5" secondAttribute="bottom" id="cg7-Bc-h8S"/>
+                            <constraint firstAttribute="trailing" secondItem="RYR-y5-70Z" secondAttribute="trailing" id="fIY-Ln-Puy"/>
+                            <constraint firstItem="RYR-y5-70Z" firstAttribute="leading" secondItem="Gfq-hj-oii" secondAttribute="leading" id="rgu-GM-4vn"/>
                             <constraint firstItem="TcL-23-Vkt" firstAttribute="leading" secondItem="bU9-zE-Lu5" secondAttribute="leading" id="uBb-ij-k7U"/>
                             <constraint firstItem="2WD-xn-wnH" firstAttribute="top" secondItem="bU9-zE-Lu5" secondAttribute="top" id="wEn-Ms-Fea"/>
                         </constraints>
@@ -581,6 +593,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="LHe-6E-L32"/>
                     <connections>
+                        <outlet property="chargeViewConstraint" destination="EKy-lv-YDB" id="HQ3-ta-49E"/>
                         <outlet property="qrCodeTopConstraint" destination="04j-Aw-wl2" id="OlZ-iF-wGm"/>
                     </connections>
                 </viewController>
@@ -700,6 +713,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yh8-Tv-4mN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2195.6521739130435" y="72.96195652173914"/>
+        </scene>
+        <!--Charge View Controller-->
+        <scene sceneID="ohL-Qf-Uue">
+            <objects>
+                <viewController id="QEi-4Y-xYX" customClass="ChargeViewController" customModule="KNUCoin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FtI-VP-D1z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="619"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KRK-QE-UzV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2857" y="-62"/>
         </scene>
     </scenes>
     <resources>
