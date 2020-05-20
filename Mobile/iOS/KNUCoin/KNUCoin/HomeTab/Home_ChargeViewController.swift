@@ -20,6 +20,6 @@ class Home_ChargeViewController: UIViewController {
     
     @IBAction func btn(_ sender: Any) {
         
-        NotificationCenter.default.post(name: Notification.Name("ToggleChargeView"), object: nil)
+        
     }
 }
