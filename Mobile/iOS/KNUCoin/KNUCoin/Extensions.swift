@@ -15,6 +15,7 @@ extension String {
         case password
         case name
         case phone
+        case money
     }
     
     enum Regex: String {
@@ -22,6 +23,7 @@ extension String {
         case password = "^(?=.*[a-z])(?=.*\\d)(?=.*[$@$!%*?&#])[A-Za-z\\d$@$!%*?&#]{6,25}"
         case name = "^[가-힣]+$"
         case phone = "^[0-9]{3}[0-9]{4}[0-9]{4}$"
+        case money = "[0-9]"
     }
     
     func isValid(_ validityType: ValidityType) -> Bool {
@@ -38,6 +40,8 @@ extension String {
             regex = Regex.name.rawValue
         case .phone:
             regex = Regex.phone.rawValue
+        case .money:
+            regex = Regex.money.rawValue
         }
         
         return NSPredicate(format: format, regex).evaluate(with: self)

@@ -577,6 +577,9 @@
                                                 <state key="normal" image="plus.circle.fill" catalog="system">
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="24"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="WM3-kU-bAw" kind="presentation" id="f5e-ot-7LC"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -609,6 +612,9 @@
                         <viewLayoutGuide key="safeArea" id="bU9-zE-Lu5"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="LHe-6E-L32"/>
+                    <connections>
+                        <outlet property="qrCodeTopConstraint" destination="dMf-9G-jGa" id="vqc-gS-OwN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z5l-Dc-RdB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -682,6 +688,74 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yh8-Tv-4mN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2195.6521739130435" y="72.96195652173914"/>
+        </scene>
+        <!--Charge View Controller-->
+        <scene sceneID="SJd-fd-ZbG">
+            <objects>
+                <viewController id="WM3-kU-bAw" customClass="ChargeViewController" customModule="KNUCoin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dFi-HI-Hda">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="충전" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghw-mX-MF7">
+                                <rect key="frame" x="20" y="20" width="52" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="52" id="bcg-30-QuC"/>
+                                    <constraint firstAttribute="height" constant="36" id="dSs-hO-kno"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="충전 금액" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1YG-rh-d5f">
+                                <rect key="frame" x="20" y="115" width="374" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="glq-un-EQb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvL-UA-KGD">
+                                <rect key="frame" x="127" y="250" width="160" height="60"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="08B-t1-osM"/>
+                                    <constraint firstAttribute="width" constant="160" id="MFe-6P-a0j"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <state key="normal" title="충전하기">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="charge_btn:" destination="WM3-kU-bAw" eventType="touchUpInside" id="NRv-Qw-DMx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ghw-mX-MF7" firstAttribute="top" secondItem="IgC-tI-ZMo" secondAttribute="top" constant="20" id="FAj-XD-fcx"/>
+                            <constraint firstItem="IgC-tI-ZMo" firstAttribute="trailing" secondItem="1YG-rh-d5f" secondAttribute="trailing" constant="20" id="GcT-z3-G4c"/>
+                            <constraint firstItem="1YG-rh-d5f" firstAttribute="top" secondItem="ghw-mX-MF7" secondAttribute="bottom" constant="59" id="HwQ-EX-YJz"/>
+                            <constraint firstItem="cvL-UA-KGD" firstAttribute="leading" secondItem="IgC-tI-ZMo" secondAttribute="leading" constant="127" id="R5v-ZY-Hss"/>
+                            <constraint firstItem="IgC-tI-ZMo" firstAttribute="trailing" secondItem="cvL-UA-KGD" secondAttribute="trailing" constant="127" id="fGb-jG-hxi"/>
+                            <constraint firstItem="cvL-UA-KGD" firstAttribute="top" secondItem="1YG-rh-d5f" secondAttribute="bottom" constant="75" id="jt6-w4-wi3"/>
+                            <constraint firstItem="ghw-mX-MF7" firstAttribute="leading" secondItem="IgC-tI-ZMo" secondAttribute="leading" constant="20" id="ybT-DF-fNK"/>
+                            <constraint firstItem="1YG-rh-d5f" firstAttribute="leading" secondItem="IgC-tI-ZMo" secondAttribute="leading" constant="20" id="ymN-Yg-kUd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IgC-tI-ZMo"/>
+                    </view>
+                    <connections>
+                        <outlet property="chargeAmount_tf" destination="1YG-rh-d5f" id="uLl-qI-1HW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xnU-OJ-n7e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2195.6521739130435" y="-795.6521739130435"/>
         </scene>
     </scenes>
     <resources>

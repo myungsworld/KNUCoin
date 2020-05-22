@@ -24,7 +24,7 @@ class HomeViewController: UIViewController {
         if direction == "up" {
             qrCodeTopConstraint.constant = 100
         } else {
-            qrCodeTopConstraint.constant = 338
+            qrCodeTopConstraint.constant = 398
         }
 
         UIView.animate(withDuration: 0.3) {
