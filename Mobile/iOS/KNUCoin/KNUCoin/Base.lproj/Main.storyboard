@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WQq-i5-vRD">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,17 +10,46 @@
         <!--Navigation Controller-->
         <scene sceneID="qwi-VO-mxr">
             <objects>
-                <navigationController navigationBarHidden="YES" id="WQq-i5-vRD" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="FirstView" navigationBarHidden="YES" id="WQq-i5-vRD" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="2JO-QW-fdD"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aAT-vR-ALC">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="eUR-OD-i9D" kind="relationship" relationship="rootViewController" id="10y-Zg-mz3"/>
+                        <segue destination="bWG-2l-lsU" kind="relationship" relationship="rootViewController" id="wD2-fz-hFQ"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cYZ-P7-zp1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1262" y="131"/>
+            <point key="canvasLocation" x="-2154" y="130"/>
+        </scene>
+        <!--Splash View Controller-->
+        <scene sceneID="2FH-AO-Qen">
+            <objects>
+                <viewController id="bWG-2l-lsU" customClass="SplashViewController" customModule="KNUCoin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fUh-bW-phG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello KNU Coin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="il4-LS-Za9">
+                                <rect key="frame" x="120" y="251" width="175" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="il4-LS-Za9" firstAttribute="centerX" secondItem="thc-ct-CNd" secondAttribute="centerX" id="9Xw-R1-NhJ"/>
+                            <constraint firstItem="il4-LS-Za9" firstAttribute="centerY" secondItem="fUh-bW-phG" secondAttribute="centerY" constant="-101" id="EQr-v8-HH8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="thc-ct-CNd"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yVv-eF-1tJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IFk-en-U1e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1261" y="130"/>
         </scene>
         <!--Login-->
         <scene sceneID="7Ss-aK-5cX">
@@ -534,7 +562,7 @@
         <!--Home-->
         <scene sceneID="VAG-KK-HOd">
             <objects>
-                <viewController title="Home" id="aNA-Om-cGZ" customClass="HomeViewController" customModule="KNUCoin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeView" title="Home" id="aNA-Om-cGZ" customClass="HomeViewController" customModule="KNUCoin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gfq-hj-oii">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -15,6 +15,7 @@
 		8851EE0124597554000FA0B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8851EDFF24597554000FA0B4 /* LaunchScreen.storyboard */; };
 		8873EDF2245BFC0F00DAB896 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8873EDF1245BFC0F00DAB896 /* LoginViewController.swift */; };
 		8873EDF4245BFC2E00DAB896 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8873EDF3245BFC2E00DAB896 /* SignupViewController.swift */; };
+		DC1D6D0E247DEE33007BCA7C /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1D6D0D247DEE33007BCA7C /* SplashViewController.swift */; };
 		DC28D0622474F7870005246B /* ChargeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC28D0612474F7870005246B /* ChargeViewController.swift */; };
 		DC5B46D024697F6800F33A9B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B46CF24697F6800F33A9B /* Extensions.swift */; };
 		DC63A60B247236D600F67224 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC63A60A247236D600F67224 /* QRCodeViewController.swift */; };
@@ -33,6 +34,7 @@
 		8851EE0224597554000FA0B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8873EDF1245BFC0F00DAB896 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8873EDF3245BFC2E00DAB896 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		DC1D6D0D247DEE33007BCA7C /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		DC28D0612474F7870005246B /* ChargeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeViewController.swift; sourceTree = "<group>"; };
 		DC5B46CF24697F6800F33A9B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		DC63A60A247236D600F67224 /* QRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 		8851EDF324597552000FA0B4 /* KNUCoin */ = {
 			isa = PBXGroup;
 			children = (
+				DC1D6D0C247DEB30007BCA7C /* SplashView */,
 				DCC9C2B624704B3F008C0BDD /* FirstViewes */,
 				DCC9C2B5247049C1008C0BDD /* HomeTab */,
 				8851EDF424597552000FA0B4 /* AppDelegate.swift */,
@@ -82,6 +85,14 @@
 				DC5B46CF24697F6800F33A9B /* Extensions.swift */,
 			);
 			path = KNUCoin;
+			sourceTree = "<group>";
+		};
+		DC1D6D0C247DEB30007BCA7C /* SplashView */ = {
+			isa = PBXGroup;
+			children = (
+				DC1D6D0D247DEE33007BCA7C /* SplashViewController.swift */,
+			);
+			path = SplashView;
 			sourceTree = "<group>";
 		};
 		DCC9C2B5247049C1008C0BDD /* HomeTab */ = {
@@ -185,6 +196,7 @@
 				DCC9C297246FBDB8008C0BDD /* HomeViewController.swift in Sources */,
 				8851EDF524597552000FA0B4 /* AppDelegate.swift in Sources */,
 				8851EDF724597552000FA0B4 /* SceneDelegate.swift in Sources */,
+				DC1D6D0E247DEE33007BCA7C /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,7 +343,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C3JJQ4733Q;
 				INFOPLIST_FILE = KNUCoin/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -350,7 +362,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C3JJQ4733Q;
 				INFOPLIST_FILE = KNUCoin/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
