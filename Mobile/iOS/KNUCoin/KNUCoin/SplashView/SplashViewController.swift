@@ -13,7 +13,7 @@ class SplashViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        guard let url = URL(string: "http://192.168.0.29:3000/api/user/autologin") else { return }
+        guard let url = URL(string: "http://172.30.1.10:3000/api/user/autologin") else { return }
         
         var request = URLRequest(url: url)
         request.httpMethod = "GET"

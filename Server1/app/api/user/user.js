@@ -136,12 +136,15 @@ exports.login = (req, res) => {
     var login_id = req.body.user_id
     var login_pwd = req.body.pwd
 
+    console.log(login_id, login_pwd)
+
     database.User.findOne({
         where: {
             user_id: login_id
         }
     }).then( (result) => {
-
+        //result null일때 예외처리 상훈이가 할것
+        
         crypto.randomBytes(64, (err, buf) => {
             crypto.pbkdf2(login_pwd, result.salt, 100000, 64, 'sha512', (err, key) => {
 
@@ -183,7 +186,8 @@ exports.login = (req, res) => {
             })
         })
 
-    }).catch( () => {
+    }).catch( (err) => {
+        console.log(err)
         console.log(login_id, 'is invalid User')
         res.status(404).json({ result : 'Invalid User' })
     })

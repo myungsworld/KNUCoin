@@ -62,7 +62,7 @@ class LoginViewController: UIViewController {
             let params = ["user_id" : id,
                               "pwd" : pwd]
 
-                guard let url = URL(string: "http://192.168.0.29:3000/api/user/login") else { return }
+                guard let url = URL(string: "http://172.30.1.10:3000/api/user/login") else { return }
                 var request = URLRequest(url: url)
                 request.httpMethod = "POST"
                 request.addValue("application/json", forHTTPHeaderField: "Content-Type")
